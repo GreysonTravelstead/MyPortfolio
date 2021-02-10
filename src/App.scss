@@ -1,0 +1,53 @@
+@import './Styles/layout';
+@import './Styles/navbar';
+@import './Styles/typography';
+@import './Styles/title';
+@import './Styles/skills';
+@import './Styles/about';
+@import './Styles/contact';
+@import './Styles/contact';
+@import './Styles/projects';
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #ffffff;
+    font-family:'Bebas Neue', cursive;;
+    font-size: 1.3rem;
+}
+
+span{
+    color: #037FFF;
+}
+
+@media screen and (max-width: 411px){
+    html{
+        font-size: 70%;
+    }
+}
+@media screen and (max-width: 700px){
+    html{
+        font-size: 90%;
+    }
+}
+@media screen and (max-width: 480px){
+    h2{
+        font-size: 70%;
+    }
+    h3{
+        font-size: 70%;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

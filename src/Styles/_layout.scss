@@ -1,0 +1,109 @@
+.container {
+    padding-top: 10vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    
+}
+
+.App{
+    .sidebar{
+        width: 15%;
+        height: 80vh;
+        
+        backdrop-filter: blur(5px);
+        position: fixed;
+        border-radius: 10px;
+        box-shadow: 0 0 10px#ffffff;
+        transform-origin: left;
+        z-index: 11;
+        @media screen and (max-width: 1000px){
+            transition: all .4s ease-in-out;
+            transform: translateX(-500%);
+            width: 30%;
+
+        }
+        @media screen and (max-width: 411px){
+            width: 50%;
+            
+        }
+    }
+    
+    .nav-toggle{
+        @media screen and (max-width: 1000px){
+            transition: all .4s ease-in-out;
+            transform: translateX(0);
+            backdrop-filter: blur(20px);
+            
+
+        }
+    }
+
+
+
+
+
+    .main-content {
+        margin-left: 20%;
+        backdrop-filter: blur(5px);
+        height: 80vh;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ffffff;
+        display: grid;
+        position: relative;
+        overflow: hidden;
+        
+        .content{
+            
+            @media screen and (max-width: 1100px){
+                margin: 2rem 10rem;
+            }
+            @media screen and (max-width: 1400px){
+                margin: 3rem 10rem;
+            }
+            @media screen and (max-width: 1400px){
+                margin: 3rem 10rem;
+            }
+            @media screen and (max-width: 710px){
+                margin: 2rem 3rem;
+            }
+        }
+        @media screen and (max-width: 1000px){
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+}
+
+    
+.nav-btn{
+    position: absolute;
+    z-index: 10;
+    right: 10%;
+    top: 5%;
+    width: 2rem;
+    height: 2rem;
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    .lines-1, .lines-2, .lines-3{
+        height: .4rem;
+        width: 100%;
+        background-color: #ffffff;
+        pointer-events: none;
+        display: none;
+        border-radius: 20px;
+        &:not(:last-child){
+            margin-bottom: .5rem;
+        }
+    }
+    @media screen and (max-width: 1000px){
+        display: block;
+        .lines-1, .lines-2, .lines-3{
+            display: block;
+        }
+    }
+}
+
+
