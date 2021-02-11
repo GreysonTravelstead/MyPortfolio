@@ -4,13 +4,13 @@ import React from 'react';
 const ContactForm = () => {
     return (
       <div className="formcontainer">
-      <form type="hidden" name="contact" method="POST">
-      <input type="hidden" name="contact" value="FormAccessNetlify" />
+      <form name="contact" action="/contact" method="post">
+        <input type="hidden" name="form-name" value="contact"/>
         <h3 className="contactHeader">Get in touch</h3>    
         <input type="text" name="name" placeholder="Full Name" required />< br/>
         <input type="email" name="email" required placeholder="E-mail"/>< br/>
         <textarea name="message" required placeholder="Message"/>< br/>
-        <button type="submit" name="SendMessage">Send</button>
+        <button type="submit">Send</button>
       </form>
     </div>
     );
