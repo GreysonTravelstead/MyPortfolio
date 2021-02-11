@@ -4,12 +4,12 @@ import React from 'react';
 const ContactForm = () => {
     return (
       <div className="formcontainer">
-      <form name="contact" method="Post" data-netlify="true">
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
         <h3 className="contactHeader">Get in touch</h3>    
         <input type="text" name="name" placeholder="Full Name" required />< br/>
         <input type="email" name="email" required placeholder="E-mail"/>< br/>
         <textarea name="message" required placeholder="Message"/>< br/>
-        <button type="submit">Send</button>
+        <button type="submit" name="SendMessage">Send</button>
       </form>
     </div>
     );
