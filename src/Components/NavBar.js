@@ -34,9 +34,9 @@ const NavBar = () => {
                     </li>
                 </ul>
                 <div className="nav_contact">
-                <p className="nav_email">gst0001@mix.wvu.edu</p>
-                <p className="nav_phone">(304) 657-0995</p>
-            </div>
+                    <p className="nav_email">gst0001@mix.wvu.edu</p>
+                    <p className="nav_phone">(304) 657-0995</p>
+                </div>
             </nav>
         </div>
     )
