@@ -1,74 +1,77 @@
-.container {
-    margin-top: 10vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-bottom: 10vh;
-    
-}
+
 
 
 .App{
-    .sidebar{
-        width: 15%;
-        height: 80vh;
-        overflow: hidden;
-        backdrop-filter: blur(5px);
-        position: fixed;
-        border-radius: 10px;
-        box-shadow: 0 0 10px#ffffff;
-        transform-origin: left;
-        z-index: 11;
-        @media screen and (max-width: 1000px){
-            transition: all .4s ease-in-out;
-            transform: translateX(-500%);
-            width: 30%;
 
-        }
-        @media screen and (max-width: 411px){
-            width: 50%;
-            
-        }
-    }
-    
-    .nav-toggle{
-        @media screen and (max-width: 1000px){
-            transition: all .4s ease-in-out;
-            transform: translateX(0);
-            backdrop-filter: blur(20px);
-            
-
-        }
-    }
-
-    .main-content {
-        margin-left: 20%;
-        backdrop-filter: blur(5px);
-        height: 80vh;
-        border-radius: 10px;
-        box-shadow: 0 0 10px #ffffff;
-        display: grid;
-        position: relative;
-        overflow: hidden;
+    .container {
+        margin-top: 10vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-bottom: 10vh;
         
-        .content{
-            
-            @media screen and (max-width: 1100px){
-                margin: 2rem 10rem;
+    
+        .sidebar{
+            width: 15%;
+            height: 80vh;
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+            position: absolute;
+            border-radius: 10px;
+            box-shadow: 0 0 10px#ffffff;
+            transform-origin: left;
+            z-index: 11;
+            @media screen and (max-width: 1000px){
+                transition: all .4s ease-in-out;
+                transform: translateX(-500%);
+                width: 30%;
+
             }
-            @media screen and (max-width: 1400px){
-                margin: 3rem 10rem;
+            @media screen and (max-width: 411px){
+                width: 50%;
+                
             }
-            @media screen and (max-width: 1400px){
-                margin: 3rem 10rem;
-            }
-            @media screen and (max-width: 710px){
-                margin: 2rem 3rem;
-            }
-            
         }
-        @media screen and (max-width: 1000px){
-            margin-left: 0;
-            width: 100%;
+        
+        .nav-toggle{
+            @media screen and (max-width: 1000px){
+                transition: all .4s ease-in-out;
+                transform: translateX(0);
+                backdrop-filter: blur(20px);
+                
+
+            }
+        }
+
+        .main-content {
+            margin-left: 20%;
+            backdrop-filter: blur(5px);
+            height: 80vh;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ffffff;
+            display: grid;
+            position: relative;
+            overflow: hidden;
+            
+            .content{
+                
+                @media screen and (max-width: 1100px){
+                    margin: 2rem 10rem;
+                }
+                @media screen and (max-width: 1400px){
+                    margin: 3rem 10rem;
+                }
+                @media screen and (max-width: 1400px){
+                    margin: 3rem 10rem;
+                }
+                @media screen and (max-width: 710px){
+                    margin: 2rem 3rem;
+                }
+                
+            }
+            @media screen and (max-width: 1000px){
+                margin-left: 0;
+                width: 100%;
+            }
         }
     }
 }
