@@ -1,8 +1,8 @@
 .container {
-    padding-top: 10vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-bottom: 10vh;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 10vh;
     
 }
 
@@ -47,7 +47,7 @@
         border-radius: 10px;
         box-shadow: 0 0 10px #ffffff;
         display: grid;
-        position: inherit;
+        position: relative;
         overflow: hidden;
         
         .content{
