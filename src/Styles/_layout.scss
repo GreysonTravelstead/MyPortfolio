@@ -1,6 +1,4 @@
 
-
-
 .App{
 
     .container {
@@ -8,6 +6,8 @@
         margin-left: 10vw;
         margin-right: 10vw;
         margin-bottom: 10vh;
+        
+        
         
     
         .sidebar{
@@ -51,6 +51,7 @@
             display: grid;
             position: relative;
             overflow: hidden;
+           
             
             .content{
                 
@@ -70,7 +71,9 @@
             }
             @media screen and (max-width: 1000px){
                 margin-left: 0;
-                width: 100%;
+               
+                width: 80%;
+                position: fixed;
             }
         }
     }
