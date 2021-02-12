@@ -40,10 +40,6 @@
         }
     }
 
-
-
-
-
     .main-content {
         margin-left: 20%;
         backdrop-filter: blur(5px);
@@ -51,7 +47,7 @@
         border-radius: 10px;
         box-shadow: 0 0 10px #ffffff;
         display: grid;
-        position: relative;
+        position: inherit;
         overflow: hidden;
         
         .content{
