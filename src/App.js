@@ -1,29 +1,64 @@
 import Particles from "react-tsparticles";
 import React from 'react';
 import './App.scss';
-import NavBar from './Components/NavBar';
+// import NavBar from './Components/NavBar';
 import HomePage from "./Pages/HomePage";
 import {Switch, Route} from 'react-router-dom';
 import AboutPage from "./Pages/AboutPage";
 import ProjectPage from "./Pages/ProjectPage";
 import ContactPage from "./Pages/ContactPage";
 import { useState } from 'react';
+import {NavLink} from 'react-router-dom';
+import profile from './images/profile.png';
 
 function App() {
   
-  const [navToggle, setNavToggle] = useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false)
 
   const navClick = () =>{
-    setNavToggle(!navToggle)
+    setNavbarOpen(prev => !prev)
   }
 
   return (
     <div className="App">
       
       <div className= "container">
-      <div className={`sidebar ${navToggle ? 'nav-toggle': ''}`}>
-        <NavBar />
-      </div>
+        <div className={`sidebar ${navbarOpen ? 'nav-toggle': ''}`}>
+          <div className="NavBar"> 
+            <nav className="nav">
+                <div className="profile">
+                    <img src={profile} alt=""/>
+                </div>
+                <ul className="nav-items">
+                    <li className="nav-item" >
+                        <NavLink to="/" exact activeClassName="active" onClick={navClick}>
+                            Home
+                        </NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink to="/about" exact activeClassName="active" onClick={navClick}>
+                            About
+                        </NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink to="/projects" exact activeClassName="active" onClick={navClick}>
+                            Projects
+                        </NavLink>
+                    </li>
+                    
+                    <li className="nav-item">
+                        <NavLink to="/contact" exact activeClassName="active" onClick={navClick}>
+                            Contact
+                        </NavLink>
+                    </li>
+                </ul>
+                <div className="nav_contact">
+                    <p className="nav_email">gst0001@mix.wvu.edu</p>
+                    <p className="nav_phone">(304) 657-0995</p>
+                </div>
+            </nav>
+          </div>
+        </div>
      
       
         <div className="main-content">
@@ -31,8 +66,8 @@ function App() {
         <div className="lines-1"></div>
         <div className="lines-2"></div>
         <div className="lines-3"></div>
-      </div>
-          <div className="content">
+        </div>
+          <div className="content" >
             <Switch>
 
               <Route path="/" exact>
