@@ -320,11 +320,11 @@ function App() {
                             About
                         </NavLink>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                         <NavLink to="/projects" exact activeClassName="active" onClick={navClick}>
                             Projects
                         </NavLink>
-                    </li>
+                    </li> */}
                     
                     <li className="nav-item">
                         <NavLink to="/contact" exact activeClassName="active" onClick={navClick}>
@@ -358,9 +358,9 @@ function App() {
                 <AboutPage />
               </Route>
 
-              <Route path="/projects" exact>
+              {/* <Route path="/projects" exact>
                 <ProjectPage />
-              </Route>
+              </Route> */}
 
              
 
