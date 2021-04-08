@@ -36,7 +36,7 @@ const HomePage = () => {
                     </span>
                 </h1>
                 <p className="paragraph">
-                    I build creative, responsive, and interactive mobile friendly websites and applications with a strong focus on user experience. 
+                    I build responsive and interactive websites and applications. 
                 </p>
                 <div className="icons">
                     <Link to={{pathname:"https://www.linkedin.com/in/greyson-seth-travelstead-a2b8b8125/"}} className="icon-holder" target="_blank">

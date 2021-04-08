@@ -5,7 +5,7 @@ import './App.scss';
 import HomePage from "./Pages/HomePage";
 import {Switch, Route} from 'react-router-dom';
 import AboutPage from "./Pages/AboutPage";
-import ProjectPage from "./Pages/ProjectPage";
+// import ProjectPage from "./Pages/ProjectPage";
 import ContactPage from "./Pages/ContactPage";
 import { useState } from 'react';
 import {NavLink} from 'react-router-dom';
